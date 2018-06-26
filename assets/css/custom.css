@@ -215,18 +215,18 @@ h1{
 	font-family: "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
   	font-weight: 300;
-  	padding: 3px;
+  	padding: 3px 3px;
   	color:#9EA9BA;
   	background-color: #36454F;
   	border-color: #9EA9BA;
   	border-radius: 2px;
+  	border-style: solid;
   	border-width: 1px;
 }
 
 #mce-EMAIL{
 	font-family: "Helvetica Neue", Arial, sans-serif;
-	font-size: 14px !important;
-	line-height: 16px;
+	font-size: 14px;
   	font-weight: 300;
   	color:#9EA9BA;
   	background-color: #36454F;
@@ -234,7 +234,7 @@ h1{
   	border-radius: 2px;
   	border-style: solid;
   	border-width: 1px;
-  	padding: 1px;
+  	padding: 3px;
   	padding-left: 6px;
 }
 
