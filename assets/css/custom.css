@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Eurostile";
+    src: url("fonts/Eurostile.ttf") format("truetype");
+}
 
 .bg-light {
 	background-color: #ffffff !important;
@@ -133,7 +137,7 @@ body{
 }
 
 h1{
-	font-family: Eurostile;
+	font-family: 'Eurostile';
 	font-size: 55px;
 }
 
@@ -153,7 +157,7 @@ figcaption p {
 @media screen and (max-width: 767px) {
 
 h1{
-	font-family: Eurostile;
+	font-family: 'Eurostile';
 	font-weight: 300;
 	font-size: 30px;
 }
