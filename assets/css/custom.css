@@ -153,6 +153,8 @@ figcaption p {
 @media screen and (max-width: 767px) {
 
 h1{
+	font-family: Eurostile;
+	font-weight: 300;
 	font-size: 25px;
 }
 
@@ -175,7 +177,7 @@ h1{
 }
 
 .section{
-	padding: 30px 10px;
+	padding: 40px 30px;
 }
 
 }
