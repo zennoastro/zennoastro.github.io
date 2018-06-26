@@ -1,3 +1,13 @@
+
+// Eurostile Font
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=7c544ca9-600f-4e31-a22a-b10922820c29&fontids=1391130");
+@font-face{
+	font-family:"Eurostile LT W01 Medium1391130";
+    src:url("Fonts/1391130/a74866ab-3280-4a0e-b8a9-dab3877ada03.eot?#iefix");
+    src:url("Fonts/1391130/a74866ab-3280-4a0e-b8a9-dab3877ada03.eot?#iefix") format("eot"),url("Fonts/1391130/2d30f6e9-8073-4694-8597-a5fcc1fd43e0.woff2") format("woff2"),url("Fonts/1391130/a68d470e-1a6a-4fbe-9f94-78cc00d51400.woff") format("woff"),url("Fonts/1391130/93c3a4eb-3bcc-42dc-8040-73e6af2ecfbb.ttf") format("truetype");
+    }
+
+
 .bg-light {
 	background-color: #ffffff !important;
 }
@@ -134,7 +144,6 @@ body{
 h1{
 	font-family: Eurostile;
 	font-size: 3.35em;
-	font-weight: 500;
 }
 
 figcaption {
