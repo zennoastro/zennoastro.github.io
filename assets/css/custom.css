@@ -13,7 +13,7 @@
 
 .intro-image {
   	width:100%;
-  	height:700px;
+  	height:40em;
   	background: url('../img/intro--main.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -21,7 +21,7 @@
 }
 
 .section{
-	padding: 100px 100px 100px 100px;
+	padding: 5em 8em;
 }
 
 .section--products{
@@ -29,15 +29,16 @@
 }
 
 .container--social{
-	padding: 50px 50px;
+	padding: 3em 3em;
 }
 
 .container--social a{
-	font-size: 14px;
+	font-size: 0.8em;
+	letter-spacing: 0.04em;
 	color: #9EA9BA;
 	text-decoration: underline;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 }
 
 .container--social a:hover{
@@ -56,7 +57,7 @@
 
 #mc-embedded-subscribe {
 	font-family: "Helvetica Neue", Arial, sans-serif;
-	font-size: 14px;
+	font-size: 0.8em;
   	font-weight: 300;
   	color:#9EA9BA;
   	background-color: #36454F;
@@ -66,7 +67,7 @@
 
 #mce-EMAIL{
 	font-family: "Helvetica Neue", Arial, sans-serif;
-	font-size: 14px !important;
+	font-size: 0.8em !important;
   	font-weight: 300;
   	color:#9EA9BA;
   	background-color: #36454F;
@@ -100,11 +101,11 @@
 }
 
 .footer p {
-	padding-bottom: 15px;
-	font-size: 14px;
+	padding-bottom: 0.8em;
+	font-size: 0.8em;
   	font-weight: 300;
   	color:#536a79;
-  	letter-spacing: 0.5px;
+  	letter-spacing: 0.04em;
   	margin: 0;
 }
 
@@ -117,7 +118,7 @@
 }
 
 .superscript {
-	font-size: 16px;
+	font-size: 0.9em;
 	color: #9EA9BA;
 }
 
@@ -132,18 +133,18 @@ body{
 
 h1{
 	font-family: Eurostile;
-	font-size: 55px;
+	font-size: 3.35em;
 	font-weight: 500;
 }
 
 figcaption {
 	font-weight: 400;
-	font-size: 18px !important;
+	font-size: 1em !important;
 	color:#36454F !important;
 }
 
 figcaption p {
 	font-weight: 300;
-	font-size: 16px !important;
+	font-size: 1em !important;
 	color: #9EA9BA; !important;	
 }
