@@ -226,6 +226,7 @@ h1{
 
 #mce-EMAIL{
 	font-family: "Helvetica Neue", Arial, sans-serif;
+	max-width: 100px;
 	font-size: 14px;
   	font-weight: 300;
   	color:#9EA9BA;
