@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Eurostile";
-    src: url("fonts/Eurostile.ttf") format("truetype");
+    src: url("fonts/eurostile/Eurostile.ttf") format("truetype");
 }
 
 .bg-light {
@@ -39,7 +39,6 @@
 
 .container--social a{
 	font-size: 14px;
-	letter-spacing: 0.2px;
 	color: #9EA9BA;
 	text-decoration: underline;
 	padding-left: 15px;
@@ -61,7 +60,7 @@
 }
 
 #mc-embedded-subscribe {
-	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
   	font-weight: 300;
   	color:#9EA9BA;
@@ -71,7 +70,7 @@
 }
 
 #mce-EMAIL{
-	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px !important;
   	font-weight: 300;
   	color:#9EA9BA;
@@ -110,7 +109,6 @@
 	font-size: 14px;
   	font-weight: 300;
   	color:#536a79;
-  	letter-spacing: 0.3px;
   	margin: 0;
 }
 
@@ -128,12 +126,11 @@
 }
 
 body{
- 	font-family: "Helvetica Neue", Arial, sans-serif !important;   
+ 	font-family: 'Open Sans', sans-serif;  
     font-weight: 300;
     color:#36454F;
    	font-style: normal;
-    font-size: 17px;
-    letter-spacing: 0px;
+    font-size: 16px;
 }
 
 h1{
@@ -143,13 +140,12 @@ h1{
 
 figcaption {
 	font-weight: 400;
-	font-size: 17px !important;
+	font-size: 16px !important;
 	color:#36454F !important;
 }
 
 figcaption p {
 	font-weight: 300;
-	font-size: 17px !important;
 	color: #9EA9BA; !important;	
 }
 
@@ -194,7 +190,7 @@ h1{
 
 .container--social a{
 	font-size: 14px;
-	letter-spacing: 0.2px;
+	letter-spacing: 0.1px;
 	color: #9EA9BA;
 	text-decoration: underline;
 	padding-left: 10px;
@@ -216,7 +212,7 @@ h1{
 }
 
 #mc-embedded-subscribe {
-	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
   	font-weight: 300;
   	padding: 3px 6px;
@@ -229,7 +225,7 @@ h1{
 }
 
 #mce-EMAIL{
-	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	max-width: 150px;
 	font-size: 14px;
   	font-weight: 300;
