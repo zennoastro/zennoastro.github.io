@@ -154,8 +154,8 @@ figcaption p {
 
 h1{
 	font-family: Eurostile;
-	font-weight: 500;
-	font-size: 25px;
+	font-weight: 300;
+	font-size: 30px;
 }
 
 .navbar-brand {
@@ -182,6 +182,23 @@ h1{
 
 .section-staff{
 	margin-top: 25px;
+}
+
+.container--social{
+	padding: 50px 50px;
+}
+
+.container--social a{
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	color: #9EA9BA;
+	text-decoration: underline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.container--social a:hover{
+	text-decoration: none;
 }
 
 }
