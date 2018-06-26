@@ -134,7 +134,7 @@ body{
 }
 
 h1{
-	font-family: 'Eurostile';
+	font-family: 'Eurostile', sans-serif;
 	font-size: 55px;
 }
 
@@ -153,7 +153,7 @@ figcaption p {
 @media screen and (max-width: 767px) {
 
 h1{
-	font-family: 'Eurostile';
+	font-family: 'Eurostile', sans-serif;
 	font-weight: 300;
 	font-size: 30px;
 }
