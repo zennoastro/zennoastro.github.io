@@ -153,11 +153,11 @@ figcaption p {
 @media screen and (max-width: 767px) {
 
 h1{
-	font-size: 15px;
+	font-size: 25px;
 }
 
 .navbar-brand {
-	width: 130px;
+	width: 80px;
 }
 
 .jumbotron {
@@ -172,6 +172,10 @@ h1{
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size:cover;
+}
+
+.section{
+	padding: 30px 10px;
 }
 
 }
