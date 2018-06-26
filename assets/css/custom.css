@@ -4,7 +4,7 @@
 }
 
 .navbar-brand {
-	width: 130px;
+	width: 110px;
 }
 
 .jumbotron {
@@ -53,7 +53,7 @@
 }
 
 #mc_embed_signup p{
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 }
 
 #mc-embedded-subscribe {
@@ -177,7 +177,7 @@ h1{
 }
 
 .section{
-	padding: 50px 30px;
+	padding: 60px 30px;
 }
 
 .section-staff{
@@ -185,7 +185,7 @@ h1{
 }
 
 .container--social{
-	padding: 50px 30px;
+	padding: 60px 30px;
 }
 
 .container--social a{
@@ -199,6 +199,42 @@ h1{
 
 .container--social a:hover{
 	text-decoration: none;
+}
+
+#mc_embed_signup {
+	background:#36454F;
+	display: inline-table;
+	padding-top: 15px;
+}
+
+#mc_embed_signup p{
+	padding-bottom: 25px;
+}
+
+#mc-embedded-subscribe {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+  	font-weight: 300;
+  	line-height: 16px;
+  	color:#9EA9BA;
+  	background-color: #36454F;
+  	border-color: #9EA9BA;
+  	border-radius: 2px;
+}
+
+#mce-EMAIL{
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px !important;
+	line-height: 16px;
+  	font-weight: 300;
+  	color:#9EA9BA;
+  	background-color: #36454F;
+  	border-color: #536a79;
+  	border-radius: 2px;
+  	border-style: solid;
+  	border-width: 1px;
+  	padding: 1px;
+  	padding-left: 6px;
 }
 
 }
