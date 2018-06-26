@@ -9,111 +9,7 @@
 
 /* tablets/desktops and up ----------- */
 @media (min-width: 992px) and (max-width: 1599px) {
-}
-
-/* large desktops and up ----------- */
-@media screen and (min-width: 1600px) {
-.navbar-brand {
-	width: 160px;
-}
-
-.jumbotron {
-	padding: 60px 100px;
-}
-
-.intro-image {
-  	width:100%;
-  	height:900px;
-}
-
-.section{
-	padding: 100px 200px;
-}
-
-.container--social{
-	padding: 75px 75px;
-}
-
-.container--social a{
-	font-size: 18px;
-	letter-spacing: 0.2px;
-	text-decoration: underline;
-	padding-left: 25px;
-	padding-right: 25px;
-}
-
-.container--social a:hover{
-	text-decoration: none;
-}
-
-#mc_embed_signup {
-	display: inline-table;
-	padding-top: 18px;
-}
-
-#mc_embed_signup p{
-	padding-bottom: 20px;
-}
-
-#mc-embedded-subscribe {
-	font-size: 18px;
-  	border-radius: 2px;
-}
-
-#mce-EMAIL{
-	font-size: 18px !important;
-  	font-weight: 300;
-  	border-radius: 2px;
-  	border-width: 1px;
-  	padding: 1px;
-  	padding-left: 6px;
-}
-
-.clear{
-	display: inline-block;
-}
-
-.footer p {
-	padding-bottom: 15px;
-	font-size: 14px;
-  	letter-spacing: 0.3px;
-  	margin: 0;
-}
-
-.section-text {
-	padding-top: 20px;
-}
-
-.section-staff{
-	margin-top: 50px;
-}
-
-.superscript {
-	font-size: 14px;
-}
-
-body{
-    font-size: 17px;
-    letter-spacing: 0px;
-}
-
-h1{
-	font-size: 55px;
-}
-
-figcaption {
-	font-size: 17px !important;
-}
-
-figcaption p {
-	font-size: 17px !important;
-}
-}
-
-
-
-
-.bg-light {
+	.bg-light {
 	background-color: #ffffff !important;
 }
 
@@ -261,4 +157,158 @@ figcaption p {
 	font-weight: 300;
 	font-size: 17px !important;
 	color: #9EA9BA; !important;	
+}
+}
+
+/* large desktops and up ----------- */
+@media screen and (min-width: 1600px) {
+.bg-light {
+	background-color: #ffffff !important;
+}
+
+.navbar-brand {
+	width: 170px;
+}
+
+.jumbotron {
+	padding: 60px 100px;
+	background-color: #ffffff;
+}
+
+.intro-image {
+  	width:100%;
+  	height:700px;
+  	background: url('../img/intro--main.jpg');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size:cover;
+}
+
+.section{
+	padding: 60px 100px;
+}
+
+.section--products{
+	background-color: #f0f2f5;
+}
+
+.container--social{
+	padding: 50px 50px;
+}
+
+.container--social a{
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	color: #9EA9BA;
+	text-decoration: underline;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.container--social a:hover{
+	text-decoration: none;
+}
+
+#mc_embed_signup {
+	background:#36454F;
+	display: inline-table;
+	padding-top: 15px;
+}
+
+#mc_embed_signup p{
+	padding-bottom: 20px;
+}
+
+#mc-embedded-subscribe {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+  	font-weight: 300;
+  	color:#9EA9BA;
+  	background-color: #36454F;
+  	border-color: #9EA9BA;
+  	border-radius: 2px;
+}
+
+#mce-EMAIL{
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px !important;
+  	font-weight: 300;
+  	color:#9EA9BA;
+  	background-color: #36454F;
+  	border-color: #536a79;
+  	border-radius: 2px;
+  	border-style: solid;
+  	border-width: 1px;
+  	padding: 1px;
+  	padding-left: 6px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:  #536a79;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #9EA9BA;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #9EA9BA;
+}
+
+.clear{
+	display: inline-block;
+}
+
+.footer {
+	background-color: #36454F;
+}
+
+.footer p {
+	padding-bottom: 15px;
+	font-size: 14px;
+  	font-weight: 300;
+  	color:#536a79;
+  	letter-spacing: 0.3px;
+  	margin: 0;
+}
+
+.section-text {
+	padding-top: 20px;
+}
+
+.section-staff{
+	margin-top: 50px;
+}
+
+.superscript {
+	font-size: 14px;
+	color: #9EA9BA;
+}
+
+body{
+ 	font-family: "Helvetica Neue", Arial, sans-serif !important;   
+    font-weight: 300;
+    color:#36454F;
+   	font-style: normal;
+    font-size: 17px;
+    letter-spacing: 0px;
+}
+
+h1{
+	font-family: Eurostile;
+	font-size: 55px;
+}
+
+figcaption {
+	font-weight: 400;
+	font-size: 17px !important;
+	color:#36454F !important;
+}
+
+figcaption p {
+	font-weight: 300;
+	font-size: 17px !important;
+	color: #9EA9BA; !important;	
+}
 }
