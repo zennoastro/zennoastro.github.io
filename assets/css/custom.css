@@ -245,7 +245,22 @@ h1{
 
 /* large desktops and up ----------- */
 @media screen and (min-width: 1600px) {
-	.intro-image {
+
+body{
+ 	font-family: 'Open Sans', sans-serif;  
+    font-weight: 300;
+    color:#36454F;
+   	font-style: normal;
+    font-size: 20px;
+    max-width: 2500px;
+    margin: auto;
+}
+
+.navbar-brand {
+	width: 180px;
+}
+
+.intro-image {
   	width:100%;
   	height:1000px;
   	background: url('../img/intro--main.jpg');
