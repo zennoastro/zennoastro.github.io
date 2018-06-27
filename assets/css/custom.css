@@ -319,4 +319,25 @@ body{
   	padding-left: 6px;
 }
 
+.footer p {
+	padding-bottom: 15px;
+	font-size: 17px;
+  	font-weight: 300;
+  	color:#536a79;
+  	margin: 0;
+}
+
+.section-text {
+	padding-top: 20px;
+}
+
+.section-staff{
+	margin-top: 50px;
+}
+
+.superscript {
+	font-size: 16px;
+	color: #9EA9BA;
+}
+
 }
