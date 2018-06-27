@@ -131,6 +131,7 @@ body{
     color:#36454F;
    	font-style: normal;
     font-size: 16px;
+    max-width: 2000px;
 }
 
 h1{
