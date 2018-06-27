@@ -257,7 +257,7 @@ body{
 }
 
 .navbar-brand {
-	width: 180px;
+	width: 160px;
 }
 
 .intro-image {
@@ -271,6 +271,52 @@ body{
 
 .section{
 	padding: 60px 300px;
+}
+
+.container--social a{
+	font-size: 17px;
+	color: #9EA9BA;
+	text-decoration: underline;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container--social a:hover{
+	text-decoration: none;
+}
+
+#mc_embed_signup {
+	background:#36454F;
+	display: inline-table;
+	padding-top: 15px;
+}
+
+#mc_embed_signup p{
+	padding-bottom: 25px;
+}
+
+#mc-embedded-subscribe {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+  	font-weight: 300;
+  	color:#9EA9BA;
+  	background-color: #36454F;
+  	border-color: #9EA9BA;
+  	border-radius: 4px;
+}
+
+#mce-EMAIL{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px !important;
+  	font-weight: 300;
+  	color:#9EA9BA;
+  	background-color: #36454F;
+  	border-color: #536a79;
+  	border-radius: 4px;
+  	border-style: solid;
+  	border-width: 1px;
+  	padding: 1px;
+  	padding-left: 6px;
 }
 
 }
