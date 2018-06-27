@@ -25,6 +25,10 @@
   	background-size:cover;
 }
 
+.figure {
+	max-width: 100%;
+}
+
 .section{
 	padding: 60px 100px;
 }
