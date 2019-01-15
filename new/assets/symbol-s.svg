@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 8 Copy 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="30.4615385" cy="30.4615385" r="27.2307692"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-8-Copy-9" transform="translate(1.000000, 2.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval" stroke="#E5E5E5" stroke-width="1.7" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <path d="M0.451622596,59.5483774 L59.66872,0.331280048" id="Line" stroke="#E5E5E5" stroke-width="1.7" stroke-linecap="square"></path>
+            <path d="M25.5293862,35.3846154 L56.5295759,35.3846154" id="Line-4" stroke="#E5E5E5" stroke-width="1.7" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>
