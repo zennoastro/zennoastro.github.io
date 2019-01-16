@@ -4457,6 +4457,22 @@ $(document).ready(function(){
     }
 });
 Beast.decl({
+    Link: {
+        tag: 'a',
+        mod: {
+            theme: 'blue'
+        },
+        noElems:true,
+        expand: function () {
+            this.domAttr('href', this.param('href'))
+            if (this.mod('New')) {
+                this.domAttr('target', '_blank')
+            }
+        }
+    }
+})
+
+Beast.decl({
     Logo: {
         expand: function () {
             this.domAttr('data-3600-start', 'background-color: rgba(255,255,255,1);' )
@@ -4481,21 +4497,6 @@ $(document).ready(function(){
 	// logoSwitch();
 
 });
-Beast.decl({
-    Link: {
-        tag: 'a',
-        mod: {
-            theme: 'blue'
-        },
-        noElems:true,
-        expand: function () {
-            this.domAttr('href', this.param('href'))
-            if (this.mod('New')) {
-                this.domAttr('target', '_blank')
-            }
-        }
-    }
-})
 
 Beast.decl({
     Main: {
@@ -4534,7 +4535,26 @@ $(document).ready(function(){
 
 
 
+Beast.decl({
+    Photos: {
+        expand: function () {
+            this.append(
+                this.get('item')
+            )
+        }
+    },
 
+    Photos__image: {
+        expand: function () {
+            this.css({
+                backgroundImage: 'url('+ this.text('') +')',
+                width: this.param('width'),
+                height: this.param('height'),
+            })
+            this.append('')
+        }
+    },
+})
 Beast.decl({
     Section: {
         inherits: ['Grid'],
@@ -4611,26 +4631,7 @@ $(document).ready(function(){
     
 
 });
-Beast.decl({
-    Photos: {
-        expand: function () {
-            this.append(
-                this.get('item')
-            )
-        }
-    },
 
-    Photos__image: {
-        expand: function () {
-            this.css({
-                backgroundImage: 'url('+ this.text('') +')',
-                width: this.param('width'),
-                height: this.param('height'),
-            })
-            this.append('')
-        }
-    },
-})
 Beast.decl({
     Text: {
         expand: function () {
