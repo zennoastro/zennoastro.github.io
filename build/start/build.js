@@ -4384,25 +4384,6 @@ function grid (num, col, gap, margin) {
     return gridWidth
 }
 /**
- * @block Typo Типографика
- * @tag base
- */
-
-Beast.decl({
-    Typo: {
-        // finalMod: true,
-        mod: {
-            text: '',       // @mod Text    {S M L XL XXL}  Text size
-            line: '',       // @mod Line    {S M L XL XXL}     Line height
-            caps: false,    // @mod Caps    {boolean}   Uppercase
-            light: false,   // @mod Light   {boolean}   Light
-            medium: false,  // @mod Medium  {boolean}   Medium
-            bold: false,    // @mod Bold    {boolean}   Bold
-            bolder: false,  // @mod Bolder  {boolean}   Bolder
-        }
-    }
-})
-/**
  * @block App Корневой компонент всех страниц
  * @dep UINavigation DocInspector DocConsole
  * @tag base
@@ -4475,29 +4456,11 @@ Beast.decl({
 Beast.decl({
     Logo: {
         expand: function () {
-            this.domAttr('data-3600-start', 'background-color: rgba(255,255,255,1);' )
-			this.domAttr('data-3800-start', 'background-color: rgba(0,79,219,1);' )
+            this.domAttr('data-3440-start', 'background-color: rgba(255,255,255,1); position: fixed;' )
+			this.domAttr('data-3460-start', 'background-color: rgba(0,79,219,1); position: fixed;' )
         }
     },
 })
-
-
-$(document).ready(function(){
-
-	// function logoSwitch () {
-	//   $('.Logo_altlogo').each(function() {
-	//     $(this).css('top',
-	//       $('.Logo_mainLogo').offset().top -  $(this).closest('.Section').offset().top
-	//     );
-	//   });
-	// };
-
-	// $(document).scroll(function() {logoSwitch();});
-
-	// logoSwitch();
-
-});
-
 Beast.decl({
     Main: {
         inherits: ['Grid', 'UIStackNavigation'],
@@ -4535,6 +4498,7 @@ $(document).ready(function(){
 
 
 
+
 Beast.decl({
     Photos: {
         expand: function () {
@@ -4552,6 +4516,15 @@ Beast.decl({
                 height: this.param('height'),
             })
             this.append('')
+        }
+    },
+})
+Beast.decl({
+    Static: {
+        expand: function () {
+            this.domAttr('data-3200-start', 'color: rgba(255,255,255,1)' )
+            this.domAttr('data-3350-start', 'color: rgba(0,79,219,1)' )
+            this.append()
         }
     },
 })
@@ -4577,15 +4550,6 @@ Beast.decl({
         tag: 'p',
         noElems:true,
     },  
-})
-Beast.decl({
-    Static: {
-        expand: function () {
-            this.domAttr('data-3200-start', 'color: rgba(255,255,255,1)' )
-            this.domAttr('data-3350-start', 'color: rgba(0,79,219,1)' )
-            this.append()
-        }
-    },
 })
 Beast.decl({
     Symbol: {
@@ -4625,13 +4589,6 @@ Beast.decl({
     },
 })
 
-$(document).ready(function(){
-
-
-    
-
-});
-
 Beast.decl({
     Text: {
         expand: function () {
@@ -4639,4 +4596,24 @@ Beast.decl({
             this.domAttr('data-3350-start', 'color: rgba(0,0,0,1);' )   
         }
     },
+})
+
+/**
+ * @block Typo Типографика
+ * @tag base
+ */
+
+Beast.decl({
+    Typo: {
+        // finalMod: true,
+        mod: {
+            text: '',       // @mod Text    {S M L XL XXL}  Text size
+            line: '',       // @mod Line    {S M L XL XXL}     Line height
+            caps: false,    // @mod Caps    {boolean}   Uppercase
+            light: false,   // @mod Light   {boolean}   Light
+            medium: false,  // @mod Medium  {boolean}   Medium
+            bold: false,    // @mod Bold    {boolean}   Bold
+            bolder: false,  // @mod Bolder  {boolean}   Bolder
+        }
+    }
 })
