@@ -2501,11 +2501,6 @@ html {
   background-color: #fff;
 }
 /* CUT THE FILE HERE */
-.Mobile .LogoFull {
-  width: 200px;
-  height: 200px;
-}
-/* CUT THE FILE HERE */
 .Mobile .Main {
   margin-top: 300px;
 }
@@ -2541,39 +2536,9 @@ html {
   opacity: 0;
 }
 /* CUT THE FILE HERE */
-@media only screen and (max-width: 735px) {
-  .Photos {
-    margin: 50px 0 !important;
-  }
-}
-.Photos {
-  text-align: center;
-  margin: 80px 0;
-}
-.Photos__name {
-  margin-top: 18px;
-  font-family: 'tt-firs-neue-medium';
-}
-.Photos__title {
-  margin-top: 10px;
-  opacity: 0.4;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-family: 'tt-firs-neue-medium';
-  letter-spacing: 1px;
-}
-.Photos__item {
-  display: inline-block;
-  margin: 20px;
-  position: relative;
-  z-index: 9999;
-}
-.Photos__image {
-  background-size: cover;
-  background-repeat: no-repeat;
+.Mobile .LogoFull {
   width: 200px;
   height: 200px;
-  border-radius: 2px;
 }
 /* CUT THE FILE HERE */
 @media only screen and (max-width: 735px) {
@@ -2611,6 +2576,41 @@ html {
   letter-spacing: 9px;
   font-family: 'tt-firs-neue-bold';
   text-transform: uppercase;
+}
+/* CUT THE FILE HERE */
+@media only screen and (max-width: 735px) {
+  .Photos {
+    margin: 50px 0 !important;
+  }
+}
+.Photos {
+  text-align: center;
+  margin: 80px 0;
+}
+.Photos__name {
+  margin-top: 18px;
+  font-family: 'tt-firs-neue-medium';
+}
+.Photos__title {
+  margin-top: 10px;
+  opacity: 0.4;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'tt-firs-neue-medium';
+  letter-spacing: 1px;
+}
+.Photos__item {
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  z-index: 9999;
+}
+.Photos__image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 2px;
 }
 /* CUT THE FILE HERE */
 @media only screen and (max-width: 735px) {
@@ -2761,10 +2761,10 @@ html {
   margin-top: 0px !important;
 }
 @media only screen and (min-width: 734px) and (max-width: 1280px) {
-  .Symbol_Large .Symbol__Logo {
+  .Mobile .Symbol_Large .Symbol__Logo {
     position: relative !important;
   }
-  .Section_Offset {
+  .Mobile .Section_Offset {
     margin-top: 0px !important;
   }
 }
