@@ -2493,6 +2493,11 @@ html {
   background-color: #fff;
 }
 /* CUT THE FILE HERE */
+.Mobile .LogoFull {
+  width: 200px;
+  height: 200px;
+}
+/* CUT THE FILE HERE */
 .Mobile .Main {
   margin-top: 300px;
 }
@@ -2526,11 +2531,6 @@ html {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   opacity: 0;
-}
-/* CUT THE FILE HERE */
-.Mobile .LogoFull {
-  width: 200px;
-  height: 200px;
 }
 /* CUT THE FILE HERE */
 @media only screen and (max-width: 735px) {
@@ -2605,16 +2605,6 @@ html {
   border-radius: 2px;
 }
 /* CUT THE FILE HERE */
-.Static {
-  text-align: center;
-  font-size: 50px;
-  font-family: 'tt-firs-neue-medium';
-  font-style: normal;
-  max-width: 640px;
-  line-height: 58px;
-  margin: 70px auto;
-}
-/* CUT THE FILE HERE */
 @media only screen and (max-width: 735px) {
   .Head {
     margin-left: auto;
@@ -2676,6 +2666,11 @@ html {
 }
 .Section__copy {
   width: 580px;
+}
+.Section__copy_Brand {
+  font-family: 'tt-firs-neue-regular' !important;
+  margin-top: 130px !important;
+  letter-spacing: 0.4px !important;
 }
 .Section__manifesto,
 .Section__headline {
@@ -2746,6 +2741,16 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: E 60s linear infinite;
+}
+/* CUT THE FILE HERE */
+.Static {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'tt-firs-neue-medium';
+  font-style: normal;
+  max-width: 640px;
+  line-height: 58px;
+  margin: 70px auto;
 }
 /* CUT THE FILE HERE */
 .Mobile .Symbol_Large .Symbol__Logo {
