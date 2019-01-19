@@ -4384,6 +4384,25 @@ function grid (num, col, gap, margin) {
     return gridWidth
 }
 /**
+ * @block Typo Типографика
+ * @tag base
+ */
+
+Beast.decl({
+    Typo: {
+        // finalMod: true,
+        mod: {
+            text: '',       // @mod Text    {S M L XL XXL}  Text size
+            line: '',       // @mod Line    {S M L XL XXL}     Line height
+            caps: false,    // @mod Caps    {boolean}   Uppercase
+            light: false,   // @mod Light   {boolean}   Light
+            medium: false,  // @mod Medium  {boolean}   Medium
+            bold: false,    // @mod Bold    {boolean}   Bold
+            bolder: false,  // @mod Bolder  {boolean}   Bolder
+        }
+    }
+})
+/**
  * @block App Корневой компонент всех страниц
  * @dep UINavigation DocInspector DocConsole
  * @tag base
@@ -4461,6 +4480,7 @@ Beast.decl({
         }
     },
 })
+
 Beast.decl({
     Main: {
         inherits: ['Grid', 'UIStackNavigation'],
@@ -4498,7 +4518,6 @@ $(document).ready(function(){
 
 
 
-
 Beast.decl({
     Photos: {
         expand: function () {
@@ -4516,15 +4535,6 @@ Beast.decl({
                 height: this.param('height'),
             })
             this.append('')
-        }
-    },
-})
-Beast.decl({
-    Static: {
-        expand: function () {
-            this.domAttr('data-3200-start', 'color: rgba(255,255,255,1)' )
-            this.domAttr('data-3350-start', 'color: rgba(0,79,219,1)' )
-            this.append()
         }
     },
 })
@@ -4550,6 +4560,15 @@ Beast.decl({
         tag: 'p',
         noElems:true,
     },  
+})
+Beast.decl({
+    Static: {
+        expand: function () {
+            this.domAttr('data-3200-start', 'color: rgba(255,255,255,1)' )
+            this.domAttr('data-3350-start', 'color: rgba(0,79,219,1)' )
+            this.append()
+        }
+    },
 })
 Beast.decl({
     Symbol: {
@@ -4596,24 +4615,4 @@ Beast.decl({
             this.domAttr('data-3350-start', 'color: rgba(0,0,0,1);' )   
         }
     },
-})
-
-/**
- * @block Typo Типографика
- * @tag base
- */
-
-Beast.decl({
-    Typo: {
-        // finalMod: true,
-        mod: {
-            text: '',       // @mod Text    {S M L XL XXL}  Text size
-            line: '',       // @mod Line    {S M L XL XXL}     Line height
-            caps: false,    // @mod Caps    {boolean}   Uppercase
-            light: false,   // @mod Light   {boolean}   Light
-            medium: false,  // @mod Medium  {boolean}   Medium
-            bold: false,    // @mod Bold    {boolean}   Bold
-            bolder: false,  // @mod Bolder  {boolean}   Bolder
-        }
-    }
 })

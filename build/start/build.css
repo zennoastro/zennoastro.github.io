@@ -15,6 +15,10 @@
   src: url("../../assets/font/TTFirsNeue-Medium.otf");
 }
 @font-face {
+  font-family: 'tt-firs-neue-medium-italic';
+  src: url("../../assets/font/TTFirsNeue-MediumItalic.otf");
+}
+@font-face {
   font-family: 'tt-firs-neue-regular';
   src: url("../../assets/font/TTFirsNeue-Regular.otf");
 }
@@ -2560,7 +2564,7 @@ html {
   font-family: 'tt-firs-neue-bold-italic';
 }
 .Name__prod_toolkit {
-  font-family: 'tt-firs-neue-regular';
+  font-family: 'tt-firs-neue-medium';
 }
 .Name__hint {
   margin: 48px auto;
