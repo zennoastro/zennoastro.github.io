@@ -2837,6 +2837,16 @@ html {
   -webkit-animation: E 60s linear infinite;
 }
 /* CUT THE FILE HERE */
+.Static {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'tt-firs-neue-medium';
+  font-style: normal;
+  max-width: 640px;
+  line-height: 58px;
+  margin: 70px auto;
+}
+/* CUT THE FILE HERE */
 .Mobile .Symbol_Large .Symbol__Logo {
   position: relative !important;
 }
@@ -2960,16 +2970,6 @@ html {
 }
 .Title_Color .Link {
   color: #004fdb !important;
-}
-/* CUT THE FILE HERE */
-.Static {
-  text-align: center;
-  font-size: 50px;
-  font-family: 'tt-firs-neue-medium';
-  font-style: normal;
-  max-width: 640px;
-  line-height: 58px;
-  margin: 70px auto;
 }
 @-webkit-keyframes blinking {
   from {

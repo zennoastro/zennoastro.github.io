@@ -4012,126 +4012,6 @@ BemNode.prototype = {
 }
 
 })();
-Beast.decl({
-    App: {
-        inherits: ['Grid'],
-        tag:'body',
-        mod: {
-            platform: '',
-            device: '',
-            ColCheck:true,
-        },
-        expand: function fn () {
-
-            this.inherited(fn)
-
-            if (MissEvent.mobile) {
-                this.mix('mobile')
-            }
-
-            if (MissEvent.android) {
-                this.mix('android')
-            }
-
-            if (MissEvent.ios) {
-                this.mix('ios')
-            }
-        },
-        domInit: function fn () {
-            this.inherited(fn)
-            history.pushState({}, '', '')
-        }
-    },
-})
-
-
-
-    Beast.decl({
-    Form: {
-        expand: function () {
-            this.append(
-                Beast.node("form",{__context:this},"\n                    ",
-                    this.get('text'),
-                    Beast.node("inputs",undefined,"\n                        ",this.get('input'),"\n                        ",Beast.node("caret",{"":true}),"\n                        ",Beast.node("submit",{"":true}),"\n                    ")
-                    ,"\n                ")
-            )
-        }
-    },
-
-    Form__form: {
-        tag:'form',
-        expand: function () {
-            this.domAttr('action', 'https://space.us18.list-manage.com/subscribe/post?u=d7fd919cea04ed139a2dfd443&amp;id=e08ab9a598')
-            this.domAttr('method', 'post')
-            this.domAttr('novalidate', 'true')
-            this.domAttr('id', 'mce-EMAIL')
-            this.domAttr('name', 'mc-embedded-subscribe-form')
-            this.domAttr('target', '_blank')
-
-            this.append()
-        }
-    },
-
-    Form__input: {
-        tag:'input',
-        expand: function () {
-            this.domAttr('placeholder', 'Email address')
-            this.domAttr('type', 'email')
-            this.domAttr('name', 'EMAIL')
-            this.append(
-                
-            )
-        }
-    },
-
-    Form__submit: {
-        tag:'input',
-        expand: function () {
-            this.domAttr('type', 'submit')
-            this.domAttr('value', 'Sign Up')
-            this.domAttr('name', 'subscribe')
-            this.domAttr('id', 'mc-embedded-subscribe')
-            this.domAttr('class', 'button')
-            this.append(
-                
-            )
-        },
-
-        domInit: function fn () {
-
-            $('#mc-embedded-subscribe').keypress(function (e) {
-              if (e.which == 13) {
-                $('#mce-EMAIL').submit();
-                return false;
-              }
-            });
-            
-        }
-    },
-
-    
-})
-
-
-
-
-
-Beast.decl({
-    Link: {
-        tag: 'a',
-        mod: {
-            theme: 'blue'
-        },
-        noElems:true,
-        expand: function () {
-            this.domAttr('href', this.param('href'))
-            if (this.mod('New')) {
-                this.domAttr('target', '_blank')
-            }
-        }
-    }
-})
-
 /**
  * @block Grid Динамическая сетка
  * @tag base
@@ -4251,14 +4131,144 @@ function grid (num, col, gap, margin) {
     var gridWidth = col * num + gap * (num - 1) + margin * 2
     return gridWidth
 }
+/**
+ * @block Typo Типографика
+ * @tag base
+ */
+
 Beast.decl({
-    Main: {
+    Typo: {
+        // finalMod: true,
+        mod: {
+            text: '',       // @mod Text    {S M L XL XXL}  Text size
+            line: '',       // @mod Line    {S M L XL XXL}     Line height
+            caps: false,    // @mod Caps    {boolean}   Uppercase
+            light: false,   // @mod Light   {boolean}   Light
+            medium: false,  // @mod Medium  {boolean}   Medium
+            bold: false,    // @mod Bold    {boolean}   Bold
+            bolder: false,  // @mod Bolder  {boolean}   Bolder
+        }
+    }
+})
+Beast.decl({
+    App: {
         inherits: ['Grid'],
-        expand: function () {
-            this.domAttr('id', 'skrollr-body' )
+        tag:'body',
+        mod: {
+            platform: '',
+            device: '',
+            ColCheck:true,
+        },
+        expand: function fn () {
+
+            this.inherited(fn)
+
+            if (MissEvent.mobile) {
+                this.mix('mobile')
+            }
+
+            if (MissEvent.android) {
+                this.mix('android')
+            }
+
+            if (MissEvent.ios) {
+                this.mix('ios')
+            }
+        },
+        domInit: function fn () {
+            this.inherited(fn)
+            history.pushState({}, '', '')
         }
     },
 })
+
+
+
+    Beast.decl({
+    Form: {
+        expand: function () {
+            this.append(
+                Beast.node("form",{__context:this},"\n                    ",
+                    this.get('text'),
+                    Beast.node("inputs",undefined,"\n                        ",this.get('input'),"\n                        ",Beast.node("caret",{"":true}),"\n                        ",Beast.node("submit",{"":true}),"\n                    ")
+                    ,"\n                ")
+            )
+        }
+    },
+
+    Form__form: {
+        tag:'form',
+        expand: function () {
+            this.domAttr('action', 'https://space.us18.list-manage.com/subscribe/post?u=d7fd919cea04ed139a2dfd443&amp;id=e08ab9a598')
+            this.domAttr('method', 'post')
+            this.domAttr('id', 'mc-embedded-subscribe-form')
+            this.domAttr('name', 'mc-embedded-subscribe-form')
+            this.domAttr('target', '_blank')
+            this.domAttr('class', 'validate')
+            this.domAttr('novalidate', 'true')
+
+            this.append()
+        }
+    },
+
+    Form__input: {
+        tag:'input',
+        expand: function () {
+            this.domAttr('placeholder', 'Email address')
+            this.domAttr('type', 'email')
+            this.domAttr('name', 'EMAIL')
+            this.domAttr('id', 'mce-EMAIL')
+            this.domAttr('required', 'true')
+            this.append()
+        }
+    },
+
+    Form__submit: {
+        tag:'input',
+        expand: function () {
+            this.domAttr('type', 'submit')
+            this.domAttr('value', 'Sign Up')
+            this.domAttr('name', 'subscribe')
+            this.domAttr('id', 'mc-embedded-subscribe')
+            this.domAttr('class', 'button')
+            this.append()
+        },
+
+        domInit: function fn () {
+
+            $('#mc-embedded-subscribe').keypress(function (e) {
+              if (e.which == 13) {
+                $('#mce-EMAIL').submit();
+                return false;
+              }
+            });
+            
+        }
+    },
+
+    
+})
+
+
+
+
+
+Beast.decl({
+    Link: {
+        tag: 'a',
+        mod: {
+            theme: 'blue'
+        },
+        noElems:true,
+        expand: function () {
+            this.domAttr('href', this.param('href'))
+            if (this.mod('New')) {
+                this.domAttr('target', '_blank')
+            }
+        }
+    }
+})
+
 Beast.decl({
     Logo: {
         domInit: function fn () {
@@ -4278,16 +4288,15 @@ Beast.decl({
     },
 })
 
-
 Beast.decl({
-    Static: {
+    Main: {
+        inherits: ['Grid'],
         expand: function () {
-            this.domAttr('data-3200-start', 'color: rgba(255,255,255,1)' )
-            this.domAttr('data-3350-start', 'color: rgba(0,79,219,1)' )
-            this.append()
+            this.domAttr('id', 'skrollr-body' )
         }
     },
 })
+
 Beast.decl({
     Photos: {
         expand: function () {
@@ -4305,6 +4314,38 @@ Beast.decl({
                 height: this.param('height'),
             })
             this.append('')
+        }
+    },
+})
+Beast.decl({
+    Section: {
+        inherits: ['Grid'],
+        expand: function () {
+            this.append(
+                Beast.node("content",{__context:this},this.get(''))
+            )
+        }
+    },
+
+    Section__copy: {
+        expand: function () {      
+            this.append(
+                Beast.node("paragraph",{__context:this},"\n                    ",this.text(),"\n                ")
+            )
+        }
+    },  
+
+    Section__paragraph: {
+        tag: 'p',
+        noElems:true,
+    },  
+})
+Beast.decl({
+    Static: {
+        expand: function () {
+            this.domAttr('data-3200-start', 'color: rgba(255,255,255,1)' )
+            this.domAttr('data-3350-start', 'color: rgba(0,79,219,1)' )
+            this.append()
         }
     },
 })
@@ -4384,25 +4425,6 @@ Beast.decl({
         }
     },
 })
-/**
- * @block Typo Типографика
- * @tag base
- */
-
-Beast.decl({
-    Typo: {
-        // finalMod: true,
-        mod: {
-            text: '',       // @mod Text    {S M L XL XXL}  Text size
-            line: '',       // @mod Line    {S M L XL XXL}     Line height
-            caps: false,    // @mod Caps    {boolean}   Uppercase
-            light: false,   // @mod Light   {boolean}   Light
-            medium: false,  // @mod Medium  {boolean}   Medium
-            bold: false,    // @mod Bold    {boolean}   Bold
-            bolder: false,  // @mod Bolder  {boolean}   Bolder
-        }
-    }
-})
 Beast.decl({
     Text: {
         expand: function () {
@@ -4410,28 +4432,4 @@ Beast.decl({
             this.domAttr('data-3350-start', 'color: rgba(0,0,0,1);' )   
         }
     },
-})
-
-Beast.decl({
-    Section: {
-        inherits: ['Grid'],
-        expand: function () {
-            this.append(
-                Beast.node("content",{__context:this},this.get(''))
-            )
-        }
-    },
-
-    Section__copy: {
-        expand: function () {      
-            this.append(
-                Beast.node("paragraph",{__context:this},"\n                    ",this.text(),"\n                ")
-            )
-        }
-    },  
-
-    Section__paragraph: {
-        tag: 'p',
-        noElems:true,
-    },  
 })
