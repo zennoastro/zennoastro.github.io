@@ -2466,6 +2466,42 @@ html {
   color: #000;
 }
 /* CUT THE FILE HERE */
+@media only screen and (max-width: 735px) {
+  .Logo {
+    position: relative !important;
+    margin-left: 0 !important;
+    left: initial !important;
+    top: 0 !important;
+  }
+}
+.Logo {
+  -webkit-mask-image: url("../../assets/logotype-text.svg");
+  mask-image: url("../../assets/logotype-text.svg");
+  width: 114px;
+  height: 30px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 98px;
+  mask-size: 98px;
+  top: 64px;
+  z-index: 10;
+  opacity: 1;
+  left: 70px;
+  margin: 0 auto;
+}
+.Logo_Start {
+  position: fixed;
+}
+.Logo_Alt {
+  position: absolute;
+}
+.Logo_Blue {
+  background-color: #004fdb;
+}
+.Logo_White {
+  background-color: #fff;
+}
+/* CUT THE FILE HERE */
 .Mobile .Main {
   margin-top: 300px;
 }
@@ -2499,6 +2535,123 @@ html {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+/* CUT THE FILE HERE */
+.Form {
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 90px;
+}
+.Form .Button {
+  display: none;
+  margin-top: 0px;
+  border: 0;
+  color: #999;
+  padding: 20px 10px;
+  cursor: pointer;
+  width: 200px;
+  background: none !important;
+}
+.Form .Button:focus {
+  outline: none;
+  border: 0 !important;
+}
+.Form .Button:hover {
+  color: #000;
+}
+.Form__text {
+  line-height: 24px;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.Form__inputs {
+  position: relative;
+}
+.Form__caret {
+  position: absolute;
+  top: calc(1.7em + 1px);
+  left: calc(2.1em + 1px);
+  width: 1px;
+  height: calc(1.45em - 1px);
+  background: #a3a8b1;
+  z-index: 20;
+  -webkit-animation: blinking 0.6s infinite;
+  animation: blinking 0.6s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+/*display: none;*/
+}
+.Form input::-webkit-input-placeholder {
+  color: #a3a8b1;
+}
+.Form input::placeholder {
+  color: #a3a8b1;
+}
+.Form Input {
+  width: 100%;
+  border: #a3a8b1 1px solid;
+  border-radius: 40px;
+  padding: 22px 34px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  line-height: 32px;
+  font-size: 20px;
+  -webkit-appearance: none;
+  position: relative;
+  z-index: 10;
+/*text-align: center;*/
+}
+.Form Input:focus + .form__caret {
+  display: none;
+}
+.Form Input:focus::-webkit-input-placeholder {
+  color: #fff;
+}
+.Form Input:focus::placeholder {
+  color: #fff;
+}
+.Form Input:focus {
+  outline: none;
+  border: #000 1px solid;
+}
+.Form Input:focus > .form__caret {
+  display: none;
+}
+/* CUT THE FILE HERE */
+@media only screen and (max-width: 735px) {
+  .Photos {
+    margin: 50px 0 !important;
+  }
+}
+.Photos {
+  text-align: center;
+  margin: 80px 0;
+}
+.Photos__name {
+  margin-top: 18px;
+  font-family: 'tt-firs-neue-medium';
+}
+.Photos__title {
+  margin-top: 10px;
+  opacity: 0.4;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'tt-firs-neue-medium';
+  letter-spacing: 1px;
+}
+.Photos__item {
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  z-index: 9999;
+}
+.Photos__image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 2px;
 }
 /* CUT THE FILE HERE */
 @media only screen and (max-width: 735px) {
@@ -2541,41 +2694,6 @@ html {
 .Mobile .LogoFull {
   width: 200px;
   height: 200px;
-}
-/* CUT THE FILE HERE */
-@media only screen and (max-width: 735px) {
-  .Photos {
-    margin: 50px 0 !important;
-  }
-}
-.Photos {
-  text-align: center;
-  margin: 80px 0;
-}
-.Photos__name {
-  margin-top: 18px;
-  font-family: 'tt-firs-neue-medium';
-}
-.Photos__title {
-  margin-top: 10px;
-  opacity: 0.4;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-family: 'tt-firs-neue-medium';
-  letter-spacing: 1px;
-}
-.Photos__item {
-  display: inline-block;
-  margin: 20px;
-  position: relative;
-  z-index: 9999;
-}
-.Photos__image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 2px;
 }
 /* CUT THE FILE HERE */
 .Static {
@@ -2687,40 +2805,25 @@ html {
   position: absolute;
 }
 /* CUT THE FILE HERE */
-@media only screen and (max-width: 735px) {
-  .Logo {
-    position: relative !important;
-    margin-left: 0 !important;
-    left: initial !important;
-    top: 0 !important;
-  }
+.Text_Center {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
-.Logo {
-  -webkit-mask-image: url("../../assets/logotype-text.svg");
-  mask-image: url("../../assets/logotype-text.svg");
-  width: 114px;
-  height: 30px;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 98px;
-  mask-size: 98px;
-  top: 64px;
-  z-index: 10;
-  opacity: 1;
-  left: 70px;
-  margin: 0 auto;
+/* CUT THE FILE HERE */
+.Mobile .Title_main {
+  font-size: 44px;
+  line-height: 46px;
 }
-.Logo_Start {
-  position: fixed;
+.Title_Nomargin {
+  margin: 90px auto !important;
 }
-.Logo_Alt {
-  position: absolute;
+.Title_Color {
+  -webkit-text-fill-color: inherit !important;
+  -webkit-background-clip: none;
 }
-.Logo_Blue {
-  background-color: #004fdb;
-}
-.Logo_White {
-  background-color: #fff;
+.Title_Color .Link {
+  color: #004fdb !important;
 }
 /* CUT THE FILE HERE */
 @media only screen and (max-width: 735px) {
@@ -2864,109 +2967,6 @@ html {
   -webkit-text-fill-color: transparent;
   -webkit-animation: E 60s linear infinite;
 }
-/* CUT THE FILE HERE */
-.Text_Center {
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-/* CUT THE FILE HERE */
-.Mobile .Title_main {
-  font-size: 44px;
-  line-height: 46px;
-}
-.Title_Nomargin {
-  margin: 90px auto !important;
-}
-.Title_Color {
-  -webkit-text-fill-color: inherit !important;
-  -webkit-background-clip: none;
-}
-.Title_Color .Link {
-  color: #004fdb !important;
-}
-/* CUT THE FILE HERE */
-.Form {
-  width: 340px;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 90px;
-}
-.Form .Button {
-  display: none;
-  margin-top: 0px;
-  border: 0;
-  color: #999;
-  padding: 20px 10px;
-  cursor: pointer;
-  width: 200px;
-  background: none !important;
-}
-.Form .Button:focus {
-  outline: none;
-  border: 0 !important;
-}
-.Form .Button:hover {
-  color: #000;
-}
-.Form__text {
-  line-height: 24px;
-  font-size: 20px;
-  margin-bottom: 16px;
-}
-.Form__inputs {
-  position: relative;
-}
-.Form__caret {
-  position: absolute;
-  top: calc(1.7em + 1px);
-  left: calc(2.1em + 1px);
-  width: 1px;
-  height: calc(1.45em - 1px);
-  background: #a3a8b1;
-  z-index: 20;
-  -webkit-animation: blinking 0.6s infinite;
-  animation: blinking 0.6s infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-/*display: none;*/
-}
-.Form input::-webkit-input-placeholder {
-  color: #a3a8b1;
-}
-.Form input::placeholder {
-  color: #a3a8b1;
-}
-.Form Input {
-  width: 100%;
-  border: #a3a8b1 1px solid;
-  border-radius: 40px;
-  padding: 22px 34px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-style: normal;
-  line-height: 32px;
-  font-size: 20px;
-  -webkit-appearance: none;
-  position: relative;
-  z-index: 10;
-/*text-align: center;*/
-}
-.Form Input:focus + .form__caret {
-  display: none;
-}
-.Form Input:focus::-webkit-input-placeholder {
-  color: #fff;
-}
-.Form Input:focus::placeholder {
-  color: #fff;
-}
-.Form Input:focus {
-  outline: none;
-  border: #000 1px solid;
-}
-.Form Input:focus > .form__caret {
-  display: none;
-}
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
@@ -2983,6 +2983,34 @@ html {
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes blinking {
+  from {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+@keyframes blinking {
+  from {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes fadein {
@@ -3055,33 +3083,5 @@ html {
   }
   to {
     background-position: 99em 0;
-  }
-}
-@-webkit-keyframes blinking {
-  from {
-    opacity: 0;
-  }
-  45% {
-    opacity: 0;
-  }
-  55% {
-    opacity: 0.6;
-  }
-  to {
-    opacity: 0.6;
-  }
-}
-@keyframes blinking {
-  from {
-    opacity: 0;
-  }
-  45% {
-    opacity: 0;
-  }
-  55% {
-    opacity: 0.6;
-  }
-  to {
-    opacity: 0.6;
   }
 }
