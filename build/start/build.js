@@ -4350,14 +4350,6 @@ Beast.decl({
     },
 })
 Beast.decl({
-    Text: {
-        expand: function () {
-            this.domAttr('data-3200-start', 'color: rgba(255,255,255,1);' )
-            this.domAttr('data-3350-start', 'color: rgba(0,0,0,1);' )   
-        }
-    },
-})
-Beast.decl({
     Symbol: {
         inherits:['Grid'],
         expand: function () {
@@ -4430,6 +4422,14 @@ Beast.decl({
                 });                
               
             });
+        }
+    },
+})
+Beast.decl({
+    Text: {
+        expand: function () {
+            this.domAttr('data-3200-start', 'color: rgba(255,255,255,1);' )
+            this.domAttr('data-3350-start', 'color: rgba(0,0,0,1);' )   
         }
     },
 })

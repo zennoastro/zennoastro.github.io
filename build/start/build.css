@@ -2445,7 +2445,7 @@
 }
 /* CUT THE FILE HERE */
 .App {
-  font-family: helvetica-neue-regular;
+  font-family: sf-pro-display-regular;
 }
 table {
   border-collapse: collapse;
@@ -2466,6 +2466,90 @@ html {
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+/* CUT THE FILE HERE */
+.Form {
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 90px;
+  z-index: 200;
+  position: relative;
+}
+.Form .Button {
+  font-size: 20px;
+  margin-top: 0px;
+  border: 0;
+  color: #999;
+  padding: 20px 10px;
+  cursor: pointer;
+  width: 200px;
+  background: none !important;
+}
+.Form .Button:focus {
+  outline: none;
+  border: 0 !important;
+}
+.Form .Button:hover {
+  color: #000;
+}
+.Form__text {
+  line-height: 24px;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.Form__inputs {
+  position: relative;
+}
+.Form__caret {
+  position: absolute;
+  top: calc(1.7em + 1px);
+  left: calc(2.1em + 1px);
+  width: 1px;
+  height: calc(1.45em - 1px);
+  background: #a3a8b1;
+  z-index: 20;
+  -webkit-animation: blinking 0.6s infinite;
+  animation: blinking 0.6s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+/*display: none;*/
+}
+.Form input::-webkit-input-placeholder {
+  color: #a3a8b1;
+}
+.Form input::placeholder {
+  color: #a3a8b1;
+}
+.Form Input {
+  width: 100%;
+  border: #a3a8b1 1px solid;
+  border-radius: 40px;
+  padding: 22px 34px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  line-height: 32px;
+  font-size: 20px;
+  -webkit-appearance: none;
+  position: relative;
+  z-index: 10;
+/*text-align: center;*/
+}
+.Form Input:focus + .form__caret {
+  display: none;
+}
+.Form Input:focus::-webkit-input-placeholder {
+  color: #fff;
+}
+.Form Input:focus::placeholder {
+  color: #fff;
+}
+.Form Input:focus {
+  outline: none;
+  border: #000 1px solid;
+}
+.Form Input:focus > .form__caret {
+  display: none;
 }
 /* CUT THE FILE HERE */
 .Link {
@@ -2550,88 +2634,6 @@ html {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   opacity: 0;
-}
-/* CUT THE FILE HERE */
-.Form {
-  width: 340px;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 90px;
-}
-.Form .Button {
-  display: none;
-  margin-top: 0px;
-  border: 0;
-  color: #999;
-  padding: 20px 10px;
-  cursor: pointer;
-  width: 200px;
-  background: none !important;
-}
-.Form .Button:focus {
-  outline: none;
-  border: 0 !important;
-}
-.Form .Button:hover {
-  color: #000;
-}
-.Form__text {
-  line-height: 24px;
-  font-size: 20px;
-  margin-bottom: 16px;
-}
-.Form__inputs {
-  position: relative;
-}
-.Form__caret {
-  position: absolute;
-  top: calc(1.7em + 1px);
-  left: calc(2.1em + 1px);
-  width: 1px;
-  height: calc(1.45em - 1px);
-  background: #a3a8b1;
-  z-index: 20;
-  -webkit-animation: blinking 0.6s infinite;
-  animation: blinking 0.6s infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-/*display: none;*/
-}
-.Form input::-webkit-input-placeholder {
-  color: #a3a8b1;
-}
-.Form input::placeholder {
-  color: #a3a8b1;
-}
-.Form Input {
-  width: 100%;
-  border: #a3a8b1 1px solid;
-  border-radius: 40px;
-  padding: 22px 34px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-style: normal;
-  line-height: 32px;
-  font-size: 20px;
-  -webkit-appearance: none;
-  position: relative;
-  z-index: 10;
-/*text-align: center;*/
-}
-.Form Input:focus + .form__caret {
-  display: none;
-}
-.Form Input:focus::-webkit-input-placeholder {
-  color: #fff;
-}
-.Form Input:focus::placeholder {
-  color: #fff;
-}
-.Form Input:focus {
-  outline: none;
-  border: #000 1px solid;
-}
-.Form Input:focus > .form__caret {
-  display: none;
 }
 /* CUT THE FILE HERE */
 @media only screen and (max-width: 735px) {
@@ -2978,24 +2980,6 @@ html {
 .Title_Color .Link {
   color: #004fdb !important;
 }
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-    background: #000;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-    background: #000;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @-webkit-keyframes blinking {
   from {
     opacity: 0;
@@ -3022,6 +3006,24 @@ html {
   }
   to {
     opacity: 0.6;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    background: #000;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    background: #000;
+  }
+  to {
+    opacity: 1;
   }
 }
 @-webkit-keyframes E {
