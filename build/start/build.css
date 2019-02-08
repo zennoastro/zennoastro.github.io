@@ -2476,26 +2476,43 @@ html {
   z-index: 200;
   position: relative;
 }
+.Form__submit-wrap {
+  display: none;
+  transition: opacity 0.25s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  margin-top: 2px;
+  line-height: 32px;
+}
+.Form__submit-wrap:hover {
+  cursor: pointer !important;
+}
+.Form__submit-icon {
+  position: relative;
+  display: inline-block;
+/*color: #fff;*/
+  color: #004fdb;
+  z-index: 10;
+  transition: all 0.1s ease;
+}
 .Form .Button {
-  font-size: 20px;
-  margin-top: 0px;
+/*color: #fff;*/
+  color: #004fdb;
+  font-size: 16px;
+  padding: 22px 0;
+  width: initial;
   border: 0;
-  color: #999;
-  padding: 20px 10px;
-  cursor: pointer;
-  width: 200px;
   background: none !important;
+/*cursor: pointer;*/
 }
 .Form .Button:focus {
   outline: none;
   border: 0 !important;
 }
-.Form .Button:hover {
-  color: #000;
-}
 .Form__text {
-  line-height: 24px;
-  font-size: 20px;
+  line-height: 20px;
+  font-size: 16px;
   margin-bottom: 16px;
 }
 .Form__inputs {
@@ -2525,8 +2542,7 @@ html {
   width: 100%;
   border: #a3a8b1 1px solid;
   border-radius: 40px;
-  padding: 22px 34px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 22px 90px 22px 32px;
   font-style: normal;
   line-height: 32px;
   font-size: 20px;
@@ -2550,6 +2566,25 @@ html {
 }
 .Form Input:focus > .form__caret {
   display: none;
+}
+.Form Input:focus ~ .form__submit-wrap {
+  display: block;
+/*&:hover {
+                    cursor: pointer;
+                }*/
+}
+.Form Input:focus ~ .form__submit-wrap:hover .form__submit-icon {
+  -webkit-transform: translateX(3px);
+  transform: translateX(3px);
+}
+.Form Input:focus ~ .form__submit-wrap .Button {
+  color: #004fdb;
+}
+.Form Input:focus ~ .form__submit-wrap .Button:hover {
+  cursor: pointer;
+}
+.Form Input:focus ~ .form__submit-wrap .form__submit-icon {
+  color: #004fdb;
 }
 /* CUT THE FILE HERE */
 .Link {
@@ -2596,11 +2631,6 @@ html {
   background-color: #fff;
 }
 /* CUT THE FILE HERE */
-.Mobile .LogoFull {
-  width: 200px;
-  height: 200px;
-}
-/* CUT THE FILE HERE */
 .Mobile .Main {
   margin-top: 300px;
 }
@@ -2634,6 +2664,11 @@ html {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+/* CUT THE FILE HERE */
+.Mobile .LogoFull {
+  width: 200px;
+  height: 200px;
 }
 /* CUT THE FILE HERE */
 @media only screen and (max-width: 735px) {
