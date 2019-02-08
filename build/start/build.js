@@ -4012,124 +4012,6 @@ BemNode.prototype = {
 }
 
 })();
-Beast.decl({
-    App: {
-        inherits: ['Grid'],
-        tag:'body',
-        mod: {
-            platform: '',
-            device: '',
-            ColCheck:true,
-        },
-        expand: function fn () {
-
-            this.inherited(fn)
-
-            if (MissEvent.mobile) {
-                this.mix('mobile')
-            }
-
-            if (MissEvent.android) {
-                this.mix('android')
-            }
-
-            if (MissEvent.ios) {
-                this.mix('ios')
-            }
-        },
-        domInit: function fn () {
-            this.inherited(fn)
-            history.pushState({}, '', '')
-        }
-    },
-})
-
-
-
-    Beast.decl({
-    Form: {
-        expand: function () {
-            this.append(
-                Beast.node("form",{__context:this},"\n                    ",
-                    this.get('text'),
-                    Beast.node("inputs",undefined,"\n                        ",this.get('input'),"\n                        ",Beast.node("caret"),"\n                        ",Beast.node("submit-wrap",undefined,"\n                            ",Beast.node("submit"),"\n                            \n                        "),"\n                    ")
-                    ,"\n                ")
-            )
-        }
-    },
-
-    Form__form: {
-        tag:'form',
-        expand: function () {
-            this.domAttr('action', 'https://space.us18.list-manage.com/subscribe/post?u=d7fd919cea04ed139a2dfd443&amp;id=e08ab9a598')
-            this.domAttr('method', 'post')
-            this.domAttr('id', 'mc-embedded-subscribe-form')
-            this.domAttr('name', 'mc-embedded-subscribe-form')
-            this.domAttr('target', '_blank')
-            this.domAttr('class', 'validate')
-            this.domAttr('novalidate', 'true')
-
-            this.append()
-        }
-    },
-
-    Form__input: {
-        tag:'input',
-        expand: function () {
-            this.domAttr('placeholder', 'Email address')
-            this.domAttr('type', 'email')
-            this.domAttr('name', 'EMAIL')
-            this.domAttr('id', 'mce-EMAIL')
-            this.domAttr('required', 'true')
-            this.append('')
-        }
-    },
-
-    Form__submit: {
-        tag:'input',
-        expand: function () {
-            this.domAttr('type', 'submit')
-            this.domAttr('value', 'Send')
-            this.domAttr('name', 'subscribe')
-            this.domAttr('id', 'mc-embedded-subscribe')
-            this.domAttr('class', 'button')
-            this.append()
-        },
-
-        domInit: function fn () {
-
-            $('#mce-EMAIL').blur(function() {
-
-                var inputLength = $(this).val();
-
-                if (inputLength.length > 1) {
-
-                    $('.form__submit-wrap').css('display', 'block');
-
-                } else {
-
-                    $('.form__submit-wrap').css('display', 'none');
-                    
-              }
-            });
-
-            $('#mc-embedded-subscribe').keypress(function (e) {
-              if (e.which == 13) {
-                $('#mce-EMAIL').submit();
-                return false;
-              }
-            });
-            
-        }
-    },
-
-    
-})
-
-
-
-
-
 /**
  * @block Grid Динамическая сетка
  * @tag base
@@ -4249,6 +4131,143 @@ function grid (num, col, gap, margin) {
     var gridWidth = col * num + gap * (num - 1) + margin * 2
     return gridWidth
 }
+/**
+ * @block Typo Типографика
+ * @tag base
+ */
+
+Beast.decl({
+    Typo: {
+        // finalMod: true,
+        mod: {
+            text: '',       // @mod Text    {S M L XL XXL}  Text size
+            line: '',       // @mod Line    {S M L XL XXL}     Line height
+            caps: false,    // @mod Caps    {boolean}   Uppercase
+            light: false,   // @mod Light   {boolean}   Light
+            medium: false,  // @mod Medium  {boolean}   Medium
+            bold: false,    // @mod Bold    {boolean}   Bold
+            bolder: false,  // @mod Bolder  {boolean}   Bolder
+        }
+    }
+})
+Beast.decl({
+    App: {
+        inherits: ['Grid'],
+        tag:'body',
+        mod: {
+            platform: '',
+            device: '',
+            ColCheck:true,
+        },
+        expand: function fn () {
+
+            this.inherited(fn)
+
+            if (MissEvent.mobile) {
+                this.mix('mobile')
+            }
+
+            if (MissEvent.android) {
+                this.mix('android')
+            }
+
+            if (MissEvent.ios) {
+                this.mix('ios')
+            }
+        },
+        domInit: function fn () {
+            this.inherited(fn)
+            history.pushState({}, '', '')
+        }
+    },
+})
+
+
+
+    Beast.decl({
+    Form: {
+        expand: function () {
+            this.append(
+                Beast.node("form",{__context:this},"\n                    ",
+                    this.get('text'),
+                    Beast.node("inputs",undefined,"\n                        ",this.get('input'),"\n                        ",Beast.node("caret"),"\n                        ",Beast.node("submit-wrap",undefined,"\n                            ",Beast.node("submit"),"\n                            \n                        "),"\n                    ")
+                    ,"\n                ")
+            )
+        }
+    },
+
+    Form__form: {
+        tag:'form',
+        expand: function () {
+            this.domAttr('action', 'https://space.us18.list-manage.com/subscribe/post?u=d7fd919cea04ed139a2dfd443&amp;id=e08ab9a598')
+            this.domAttr('method', 'post')
+            this.domAttr('id', 'mc-embedded-subscribe-form')
+            this.domAttr('name', 'mc-embedded-subscribe-form')
+            this.domAttr('target', '_blank')
+            this.domAttr('class', 'validate')
+            this.domAttr('novalidate', 'true')
+
+            this.append()
+        }
+    },
+
+    Form__input: {
+        tag:'input',
+        expand: function () {
+            this.domAttr('placeholder', 'Email address')
+            this.domAttr('type', 'email')
+            this.domAttr('name', 'EMAIL')
+            this.domAttr('id', 'mce-EMAIL')
+            this.domAttr('required', 'true')
+            this.append('')
+        }
+    },
+
+    Form__submit: {
+        tag:'input',
+        expand: function () {
+            this.domAttr('type', 'submit')
+            this.domAttr('value', 'Send')
+            this.domAttr('name', 'subscribe')
+            this.domAttr('id', 'mc-embedded-subscribe')
+            this.domAttr('class', 'button')
+            this.append()
+        },
+
+        domInit: function fn () {
+
+            $('#mce-EMAIL').blur(function() {
+
+                var inputLength = $(this).val();
+
+                if (inputLength.length > 1) {
+
+                    $('.form__submit-wrap').css('display', 'block');
+
+                } else {
+
+                    $('.form__submit-wrap').css('display', 'none');
+                    
+              }
+            });
+
+            $('#mc-embedded-subscribe').keypress(function (e) {
+              if (e.which == 13) {
+                $('#mce-EMAIL').submit();
+                return false;
+              }
+            });
+            
+        }
+    },
+
+    
+})
+
+
+
+
+
 Beast.decl({
     Link: {
         tag: 'a',
@@ -4283,6 +4302,7 @@ Beast.decl({
         }
     },
 })
+
 Beast.decl({
     Main: {
         inherits: ['Grid'],
@@ -4291,7 +4311,6 @@ Beast.decl({
         }
     },
 })
-
 
 Beast.decl({
     Photos: {
@@ -4437,24 +4456,4 @@ Beast.decl({
             this.domAttr('data-3350-start', 'color: rgba(0,0,0,1);' )   
         }
     },
-})
-
-/**
- * @block Typo Типографика
- * @tag base
- */
-
-Beast.decl({
-    Typo: {
-        // finalMod: true,
-        mod: {
-            text: '',       // @mod Text    {S M L XL XXL}  Text size
-            line: '',       // @mod Line    {S M L XL XXL}     Line height
-            caps: false,    // @mod Caps    {boolean}   Uppercase
-            light: false,   // @mod Light   {boolean}   Light
-            medium: false,  // @mod Medium  {boolean}   Medium
-            bold: false,    // @mod Bold    {boolean}   Bold
-            bolder: false,  // @mod Bolder  {boolean}   Bolder
-        }
-    }
 })

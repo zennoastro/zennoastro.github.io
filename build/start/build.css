@@ -2444,30 +2444,6 @@
   font-weight: bold;
 }
 /* CUT THE FILE HERE */
-.App {
-  font-family: sf-pro-display-regular;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  border: none;
-}
-td {
-  padding: 0;
-  vertical-align: baseline;
-}
-html {
-  background: transparent;
-}
-.App {
-  background: #000;
-  padding: 0;
-  margin: 0;
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* CUT THE FILE HERE */
 .Form {
   max-width: 340px;
   margin: 0 auto;
@@ -2587,6 +2563,30 @@ html {
   color: #004fdb;
 }
 /* CUT THE FILE HERE */
+.App {
+  font-family: sf-pro-display-regular;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+}
+td {
+  padding: 0;
+  vertical-align: baseline;
+}
+html {
+  background: transparent;
+}
+.App {
+  background: #000;
+  padding: 0;
+  margin: 0;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* CUT THE FILE HERE */
 .Link {
   color: #a3a8b1;
   text-decoration: none !important;
@@ -2631,6 +2631,11 @@ html {
   background-color: #fff;
 }
 /* CUT THE FILE HERE */
+.Mobile .LogoFull {
+  width: 200px;
+  height: 200px;
+}
+/* CUT THE FILE HERE */
 .Mobile .Main {
   margin-top: 300px;
 }
@@ -2664,11 +2669,6 @@ html {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   opacity: 0;
-}
-/* CUT THE FILE HERE */
-.Mobile .LogoFull {
-  width: 200px;
-  height: 200px;
 }
 /* CUT THE FILE HERE */
 @media only screen and (max-width: 735px) {
@@ -2770,6 +2770,9 @@ html {
     line-height: 27px !important;
     font-size: 24px !important;
   }
+  .Section__copy_Offset {
+    padding-top: 30% !important;
+  }
   .Section__manifesto {
     width: 100% !important;
     font-size: 32px !important;
@@ -2800,6 +2803,13 @@ html {
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
 }
+.Section_Fill {
+  right: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
 .Section:last-child {
   padding-bottom: 0 !important;
 }
@@ -2813,6 +2823,15 @@ html {
   margin-top: 170px !important;
   color: #999;
   letter-spacing: 0.4px !important;
+}
+.Section__copy_Bottom {
+  position: absolute !important;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+.Section__copy_Offset {
+  padding-top: 10%;
 }
 .Section__manifesto,
 .Section__headline {
